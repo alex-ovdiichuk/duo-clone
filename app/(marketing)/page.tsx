@@ -28,12 +28,20 @@ export const HomePage = () => {
           </ClerkLoading>
           <ClerkLoaded>
             <SignedOut>
-              <SignUpButton mode="modal" forceRedirectUrl="/learn">
+              <SignUpButton
+                mode="modal"
+                forceRedirectUrl="/learn"
+                signInForceRedirectUrl="/learn"
+              >
                 <Button size="lg" variant="secondary" className="w-full">
                   Get started
                 </Button>
               </SignUpButton>
-              <SignInButton>
+              <SignInButton
+                mode="modal"
+                forceRedirectUrl="/learn"
+                signUpForceRedirectUrl="/learn"
+              >
                 <Button size="lg" variant="primaryOutline" className="w-full">
                   I already have an account
                 </Button>
